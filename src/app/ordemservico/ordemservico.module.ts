@@ -13,6 +13,7 @@ import { CadastroComponent } from './cadastro/cadastro.component';
   ],
   exports: [
     OrdemServicoComponent
-  ]
+  ],
+  providers: []
 })
 export class OrdemservicoModule { }
