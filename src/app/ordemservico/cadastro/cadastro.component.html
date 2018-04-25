@@ -1,25 +1,26 @@
+<form #f="ngForm" (ngSubmit)="onSubmit(f)"> 
 <div class="row">
   <div class="input-field col s3">
-    <input id="cpf" type="text" class="validate">
+    <input id="cpf" type="text" class="validate" name="cpf" [(ngModel)] = "ordemservico.cliente.cpf">
     <label for="cpf">CPF</label>
   </div>
   <div class="input-field col s3">
-    <input id="rg" type="text" class="validate">
+    <input id="rg" type="text" class="validate" name="rg" [(ngModel)] = "ordemservico.cliente.rg">
     <label for="rg">RG</label>
   </div>
   <div class="input-field col s1">
-    <input id="expedidor" type="text" class="validate">
+    <input id="expedidor" type="text" class="validate" name="expedidor" [(ngModel)] = "ordemservico.cliente.expedidor">
     <label for="expedidor">Org. Expedidor</label>
   </div>   
 </div>
 
 <div class="row">
   <div class="input-field col s3">
-    <input id="nome" type="text" class="validate">
+    <input id="nome" type="text" class="validate" name="nome" [(ngModel)] = "ordemservico.cliente.nome">
     <label for="nome">Nome</label>
   </div>
   <div class="input-field col s4">
-    <input id="sobrenome" type="text" class="validate">
+    <input id="sobrenome" type="text" class="validate" name="sobrenome" [(ngModel)] = "ordemservico.cliente.sobreNome">
     <label for="sobrenome">Sobrenome</label>
   </div>
 </div>
@@ -37,33 +38,33 @@
 
 <div class="row">
   <div class="input-field col s3">
-    <input id="logradouro" type="text" class="validate">
+    <input id="logradouro" type="text" class="validate" name="logradouro" [(ngModel)] = "ordemservico.cliente.endereco.logradouro">
     <label for="logradouro">Logradouro</label>
   </div>
   <div class="input-field col s1">
-    <input id="numero" type="text" class="validate">
+    <input id="numero" type="text" class="validate" name="numero" [(ngModel)] = "ordemservico.cliente.endereco.numero">
     <label for="numero">Número</label>
   </div>
   <div class="input-field col s3">
-    <input id="complemento" type="text" class="validate">
+    <input id="complemento" type="text" class="validate" name="complemento" [(ngModel)] = "ordemservico.cliente.endereco.complemento">
     <label for="complemento">Complemento</label>
   </div>
 </div>
 
 <div class="row">
   <div class="input-field col s2">
-    <input id="bairro" type="text" class="validate">
+    <input id="bairro" type="text" class="validate" name="bairro" [(ngModel)] = "ordemservico.cliente.endereco.bairro">
     <label for="bairro">Bairro</label>
   </div>
   <div class="input-field col s2">
-    <input id="cidade" type="text" class="validate">
+    <input id="cidade" type="text" class="validate" name="cidade" [(ngModel)] = "ordemservico.cliente.endereco.cidade">
     <label for="cidade">Cidade</label>
   </div>
   <div class="input-field col s1">
-    <input id="uf" type="text" class="validate">
+    <input id="uf" type="text" class="validate" name="uf" [(ngModel)] = "ordemservico.cliente.endereco.uf">
     <label for="uf">UF</label>
   </div><div class="input-field col s2">
-    <input id="cep" type="text" class="validate">
+    <input id="cep" type="text" class="validate" name="cep" [(ngModel)] = "ordemservico.cliente.endereco.cep">
     <label for="cep">CEP</label>
   </div>
 </div>
@@ -72,34 +73,35 @@
 
 <div class="row">
   <div class="input-field col s2">
-    <input id="marca" type="text" class="validate">
+    <input id="marca" type="text" class="validate" name="marca" [(ngModel)] = "ordemservico.aparelho.marca">
     <label for="marca">Marca</label>
   </div>
   <div class="input-field col s2">
-    <input id="modelo" type="text" class="validate">
+    <input id="modelo" type="text" class="validate" name="modelo" [(ngModel)] = "ordemservico.aparelho.modelo">
     <label for="modelo">Modelo</label>
   </div>
   <div class="input-field col s1">
-    <input id="serial" type="text" class="validate">
+    <input id="serial" type="text" class="validate" name="serial" [(ngModel)] = "ordemservico.aparelho.serial">
     <label for="serial">Serial</label>
   </div><div class="input-field col s2">
-    <input id="codbarras" type="text" class="validate">
+    <input id="codbarras" type="text" class="validate" name="codBarras" [(ngModel)] = "ordemservico.aparelho.codbarras">
     <label for="codbarras">Cod. Barras</label>
   </div>
 </div>
 
 <div class="row">
   <div class="input-field col s7">
-    <textarea id="condicao" class="materialize-textarea"></textarea>
+    <textarea id="condicao" class="materialize-textarea" name="condicao" [(ngModel)] = "ordemservico.condicaoAparelho"></textarea>
     <label for="condicao">Condição do Aparelho</label>
   </div>
 </div>
 
 <div class="row">
   <div class="input-field col s7">
-    <textarea id="obs" class="materialize-textarea"></textarea>
+    <textarea id="obs" class="materialize-textarea" name="obs" [(ngModel)] = "ordemservico.observacoes"></textarea>
     <label for="obs">Observações</label>
   </div>
 </div>
 
-<a class="waves-effect waves-light btn-large blue"><i class="material-icons right">save</i>Salvar</a>
+<button type="submit" class="waves-effect waves-light btn-large blue"><i class="material-icons right">save</i>Salvar</button>
+</form>

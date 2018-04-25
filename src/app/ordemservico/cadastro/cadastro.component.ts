@@ -1,3 +1,4 @@
+import { Ordemservico } from './ordemServico';
 import { Component, OnInit } from '@angular/core';
 
 @Component({
@@ -7,9 +8,14 @@ import { Component, OnInit } from '@angular/core';
 })
 export class CadastroComponent implements OnInit {
 
-  constructor() {}
+  constructor(
+    private ordemservico: Ordemservico 
+  ) {}
 
-  ngOnInit() {
+  ngOnInit() {}
+
+  onSubmit(form){
+    console.log(this.ordemservico);
   }
 
 }
