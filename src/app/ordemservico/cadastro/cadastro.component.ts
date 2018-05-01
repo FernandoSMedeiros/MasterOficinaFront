@@ -1,5 +1,6 @@
 import { Ordemservico } from './ordemServico';
 import { Component, OnInit } from '@angular/core';
+import { JsonPipe } from '@angular/common';
 
 @Component({
   selector: 'cadastro',

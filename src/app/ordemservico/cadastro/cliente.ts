@@ -7,6 +7,8 @@ export class Cliente{
     rg: number;
     expedidor: string;
     cpf: number;
+    cel: string;
+    tel: string;
 
     endereco: Endereco = new Endereco();
 

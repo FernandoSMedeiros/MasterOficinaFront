@@ -27,11 +27,11 @@
 
 <div class="row">
   <div class="input-field col s3">
-    <input id="tel" type="text" class="validate">
+    <input id="tel" type="text" class="validate" name="tel" [(ngModel)] = "ordemservico.cliente.tel">
     <label for="tel">Telefone</label>
   </div>
   <div class="input-field col s3">
-    <input id="cel1" type="text" class="validate">
+    <input id="cel1" type="text" class="validate" name="cel" [(ngModel)] = "ordemservico.cliente.cel">
     <label for="cel1">Celular</label>
   </div>  
 </div>
