@@ -4,11 +4,13 @@ import { NgModule } from '@angular/core';
 
 import { AppComponent } from './app.component';
 import { OrdemservicoModule } from './ordemservico/ordemservico.module';
+import { ListaComponent } from './lista/lista.component';
 
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    ListaComponent
   ],
   imports: [
     BrowserModule,

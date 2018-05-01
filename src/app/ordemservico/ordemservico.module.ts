@@ -5,6 +5,7 @@ import { FormsModule } from '@angular/forms';
 import { OrdemServicoComponent } from './ordemservico.component';
 import { CadastroComponent } from './cadastro/cadastro.component';
 import { Ordemservico } from './cadastro/ordemServico';
+import { ListaComponent } from './lista/lista.component';
 
 @NgModule({
   imports: [
@@ -13,10 +14,12 @@ import { Ordemservico } from './cadastro/ordemServico';
   ],
   declarations: [
     OrdemServicoComponent,
-    CadastroComponent
+    CadastroComponent,
+    ListaComponent
   ],
   exports: [
-    OrdemServicoComponent
+    OrdemServicoComponent,
+    ListaComponent
   ],
   providers: [
     Ordemservico
