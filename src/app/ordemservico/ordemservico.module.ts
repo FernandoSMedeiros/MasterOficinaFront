@@ -6,6 +6,7 @@ import { OrdemServicoComponent } from './ordemservico.component';
 import { CadastroComponent } from './cadastro/cadastro.component';
 import { Ordemservico } from './cadastro/ordemServico';
 import { ListaComponent } from './lista/lista.component';
+import { BuscaComponent } from './busca/busca.component';
 
 @NgModule({
   imports: [
@@ -15,7 +16,8 @@ import { ListaComponent } from './lista/lista.component';
   declarations: [
     OrdemServicoComponent,
     CadastroComponent,
-    ListaComponent
+    ListaComponent,
+    BuscaComponent
   ],
   exports: [
     OrdemServicoComponent,
