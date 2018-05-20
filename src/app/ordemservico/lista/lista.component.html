@@ -1,0 +1,22 @@
+<table class = "responsive-table">
+  <thead>
+    <tr>
+        <th>OS</th>
+        <th>Cliente</th>
+        <th>Situação</th>
+        <th>Orçamento</th>
+        <th>Data Entrada</th>
+        <th>Data Entrega</th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <tr (dblclick) = "onClick(ordem)" *ngFor="let ordem of os">
+      <td><b>{{ordem.os}}</b></td>
+      <td>{{ordem.cliente}}</td>
+      <td>{{ordem.situacao}}</td>
+      <td>{{ordem.orcamento}}</td>
+      <td>{{ordem.dataentrada}}</td>
+      <td>{{ordem.dataentrega}}</td>
+    </tr>    
+</table>
